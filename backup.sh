@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 BACKUP_DIR=/data/back-up/;
 FILE_NAME=$(date +"%Y-%m-%d");
-DB_NAME="kyoo_automotive";
-DB_AUTH_NAME="kyoo_automotive";
-DB_USERNAME="kyoo_automotive_admin";
-DB_PASSWORD="Passw0rdo";
-DB_HOST="172.31.0.181:27017";
+DB_NAME="";
+DB_AUTH_NAME="";
+DB_USERNAME="";
+DB_PASSWORD="";
+DB_HOST="";
 FULL_DIR="${BACKUP_DIR}${FILE_NAME}.zip"
-EXCLUDED_COLLECTIONS=("employee_tokens" "logs");
+EXCLUDED_COLLECTIONS=();
 EXCLUDED_COLLECTION_CMD="";
 for i in "${EXCLUDED_COLLECTIONS[@]}";
 	do 
